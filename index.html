@@ -1,31 +1,338 @@
-<!doctype html><html lang="de"><head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1585723623500492"
-     crossorigin="anonymous"></script>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" id="metaDescription" content="25 kostenlose Online-Rechner"><meta name="google-adsense-account" content="ca-pub-1585723623500492"><title>Smarte Rechner</title>
-<!-- AdSense verification script included. Configure a Google-certified CMP for EEA/UK/CH visitors before serving personalized ads. -->
-<style>:root{font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:#1c2b44;background:#f4f7fc}*{box-sizing:border-box}body{margin:0}header{background:linear-gradient(125deg,#102d59,#2469b8);color:white;padding:55px 20px 40px;text-align:center}h1{font-size:clamp(30px,5vw,48px);margin:0 0 12px}header p{opacity:.92;margin:0}main{max-width:1180px;margin:auto;padding:30px 18px}p{line-height:1.65}.language-bar{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:24px}button{cursor:pointer;font:inherit} .language-bar button{border:1px solid #b9d4f7;background:#fff;color:#143a72;border-radius:30px;padding:9px 15px}.language-bar button[aria-pressed=true]{background:#d6eaff;border-color:#fff;font-weight:750}.tools{display:flex;gap:12px;align-items:center;margin:22px 0 25px}.tools input{flex:1;min-width:0}.tools span{font-weight:700;color:#315e9a;white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}[hidden]{display:none!important}.card{background:white;border:1px solid #e1e8f3;border-radius:19px;padding:23px;box-shadow:0 5px 22px #122c5110}.card h2{font-size:19px;margin:0 0 15px;color:#153c75}.card label{display:block;margin:13px 0 5px;font-size:14px;font-weight:600}input{width:100%;border:1px solid #bccce1;border-radius:10px;padding:12px;font:inherit;background:#fff;color:#172338}input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}.calculate{background:#1767c2;border:0;border-radius:10px;padding:12px 17px;color:white;margin-top:17px;font-weight:700;width:100%}.calculate:hover{background:#104e98}output{display:block;min-height:30px;margin-top:14px;color:#0a5b9b;font-size:18px;font-weight:800;overflow-wrap:anywhere}.info{margin-top:36px;padding:26px;background:white;border-radius:18px}.info h2{color:#153c75}footer{text-align:center;padding:28px 16px;color:#5e6e83;font-size:14px}footer a{color:#155ba9;margin:0 8px}details{margin-top:20px;border-top:1px solid #d9e2ee;padding-top:14px}summary{cursor:pointer;font-weight:700}.muted{font-size:13px;color:#5e6e83}@media(max-width:480px){header{padding:38px 16px 30px}main{padding:20px 12px}.card{padding:18px}.tools{flex-wrap:wrap}}</style></head><body>
-<header><h1 id="siteTitle">Smarte Rechner</h1><p id="tagline"></p><nav class="language-bar" aria-label="Language"><button data-lang="de" type="button">🇩🇪 Deutsch</button><button data-lang="en" type="button">🇬🇧 English</button><button data-lang="ru" type="button">🇷🇺 Русский</button></nav></header>
-<main><p id="intro"></p><div class="tools"><input type="search" id="search" aria-label="Search" placeholder="Rechner suchen…"><span id="count">25 / 25</span></div><div class="grid" id="grid"></div><p id="noresults" hidden></p><section class="info"><h2 id="how"></h2><p id="howtext"></p><h2 id="about"></h2><p id="abouttext"></p><details><summary id="legal"></summary><h3 id="impressum"></h3><p id="legalbody"></p><h3 id="privacy"></h3><p id="ads"></p></details></section></main><footer>© <span id="year"></span> <span id="footerTitle"></span></footer>
-<script>
-const translations={"ru": {"title": "Умные калькуляторы", "tag": "25 бесплатных инструментов на каждый день. Без регистрации.", "intro": "Введите значения и нажмите «Рассчитать». Все вычисления выполняются прямо в браузере; введённые данные не отправляются на сервер.", "how": "Как пользоваться", "howtext": "Выберите нужный калькулятор, заполните поля и получите результат. Расчёты носят справочный характер. Для финансовых решений проверяйте условия и актуальные ставки отдельно.", "about": "О сайте", "abouttext": "25 бесплатных калькуляторов для повседневных задач. Результаты справочные. Перед публикацией рекламы необходимо заполнить юридические сведения и настроить управление согласием пользователей.", "calc": "Рассчитать", "error": "Проверьте введённые значения", "days": " дней", "meta": "25 бесплатных онлайн-калькуляторов: скидки, проценты, даты, расходы, накопления и другое.", "names": ["Процент от числа", "Скидка", "Наценка", "НДС", "Разделить счёт", "Чаевые", "Почасовая зарплата", "Месячные накопления", "Бюджет", "Цена за килограмм", "Расход топлива", "Стоимость поездки", "Индекс массы тела", "Площадь комнаты", "Дней между датами", "Кредит: месячный платёж", "Сложный процент", "Повышение цены", "Снижение цены", "Электроэнергия", "Вода", "Объём комнаты", "Конвертер температуры", "Возраст в годах", "Срок накопления"], "labels": [["Число", "Процент"], ["Цена, €", "Скидка, %"], ["Себестоимость, €", "Наценка, %"], ["Цена без НДС, €", "Ставка НДС, %"], ["Общая сумма, €", "Количество человек"], ["Счёт, €", "Чаевые, %"], ["Ставка в час, €", "Часов в неделю"], ["Откладываю в месяц, €", "Количество месяцев"], ["Доход, €", "Расходы, €"], ["Стоимость упаковки, €", "Вес, грамм"], ["Расстояние, км", "Литров на 100 км"], ["Расход топлива, л", "Цена за литр, €"], ["Вес, кг", "Рост, см"], ["Длина, м", "Ширина, м"], ["Начальная дата", "Конечная дата"], ["Сумма кредита, €", "Годовая ставка, %", "Срок, месяцев"], ["Начальная сумма, €", "Годовая ставка, %", "Лет"], ["Старая цена, €", "Новая цена, €"], ["Старая цена, €", "Новая цена, €"], ["Мощность, Вт", "Часов в день", "Цена за кВт·ч, €"], ["Кубометры", "Цена за м³, €"], ["Длина, м", "Ширина, м", "Высота, м"], ["Градусы Цельсия"], ["Дата рождения", "Дата расчёта"], ["Цель, €", "В месяц, €"]], "search": "Найти калькулятор…", "all": "Все", "noresults": "Ничего не найдено", "legal": "Юридическая информация", "impressum": "Impressum", "privacy": "Datenschutzerklärung / Privacy", "legalbody": "Перед публикацией заполните данные владельца сайта: имя, почтовый адрес, контактные данные и сведения о защите данных. Это не готовая юридическая политика.", "ads": "Реклама появится после одобрения AdSense и настройки согласия."}, "de": {"title": "Smarte Rechner", "tag": "25 kostenlose Alltagsrechner. Ohne Anmeldung.", "intro": "Werte eingeben und auf „Berechnen“ tippen. Alle Berechnungen erfolgen direkt im Browser; Ihre Eingaben werden nicht an einen Server gesendet.", "how": "So funktioniert es", "howtext": "Wählen Sie einen Rechner, geben Sie die Werte ein und sehen Sie das Ergebnis. Die Ergebnisse dienen nur zur Orientierung. Prüfen Sie bei finanziellen Entscheidungen die aktuellen Konditionen und Steuersätze.", "about": "Über diese Website", "abouttext": "25 kostenlose Rechner für den Alltag. Ergebnisse sind unverbindlich. Vor der Werbeschaltung müssen das Impressum und die Datenschutzhinweise ergänzt und eine geeignete Einwilligungsverwaltung eingerichtet werden.", "calc": "Berechnen", "error": "Bitte Eingaben überprüfen", "days": " Tage", "meta": "25 kostenlose Online-Rechner für Rabatte, Prozente, Datum, Ausgaben, Sparen und mehr.", "names": ["Prozentwert", "Rabatt", "Aufschlag", "Mehrwertsteuer", "Rechnung teilen", "Trinkgeld", "Stundenlohn", "Monatliches Sparen", "Budget", "Preis pro Kilogramm", "Kraftstoffverbrauch", "Fahrtkosten", "Body-Mass-Index", "Raumfläche", "Tage zwischen Daten", "Kreditrate pro Monat", "Zinseszins", "Preiserhöhung", "Preissenkung", "Stromkosten", "Wasserkosten", "Raumvolumen", "Temperatur umrechnen", "Alter in Jahren", "Sparziel erreichen"], "labels": [["Zahl", "Prozent"], ["Preis, €", "Rabatt, %"], ["Einkaufspreis, €", "Aufschlag, %"], ["Nettopreis, €", "MwSt.-Satz, %"], ["Gesamtbetrag, €", "Personenanzahl"], ["Rechnungsbetrag, €", "Trinkgeld, %"], ["Stundenlohn, €", "Stunden pro Woche"], ["Sparbetrag pro Monat, €", "Anzahl Monate"], ["Einnahmen, €", "Ausgaben, €"], ["Packungspreis, €", "Gewicht, Gramm"], ["Strecke, km", "Liter pro 100 km"], ["Verbrauch, Liter", "Preis pro Liter, €"], ["Gewicht, kg", "Größe, cm"], ["Länge, m", "Breite, m"], ["Startdatum", "Enddatum"], ["Kreditbetrag, €", "Jahreszins, %", "Laufzeit, Monate"], ["Startbetrag, €", "Jahreszins, %", "Jahre"], ["Alter Preis, €", "Neuer Preis, €"], ["Alter Preis, €", "Neuer Preis, €"], ["Leistung, Watt", "Stunden pro Tag", "Preis pro kWh, €"], ["Kubikmeter", "Preis pro m³, €"], ["Länge, m", "Breite, m", "Höhe, m"], ["Grad Celsius"], ["Geburtsdatum", "Stichtag"], ["Sparziel, €", "Pro Monat, €"]], "search": "Rechner suchen…", "all": "Alle", "noresults": "Keine Ergebnisse", "legal": "Rechtliche Hinweise", "impressum": "Impressum", "privacy": "Datenschutzerklärung / Privacy", "legalbody": "Vor Veröffentlichung: Betreibername, ladungsfähige Anschrift, Kontaktdaten und vollständige Datenschutzhinweise ergänzen. Dieser Hinweis ersetzt keine rechtsgültigen Rechtstexte.", "ads": "Anzeigen erscheinen erst nach AdSense-Freigabe und Einrichtung der Einwilligungsverwaltung."}, "en": {"title": "Smart Calculators", "tag": "25 free everyday tools. No registration required.", "intro": "Enter your values and select “Calculate”. All calculations run in your browser; your inputs are not sent to a server.", "how": "How to use", "howtext": "Choose a calculator, fill in the fields, and see the result. Results are for general information only. Check current terms and rates before making financial decisions.", "about": "About this website", "abouttext": "25 free calculators for everyday tasks. Results are estimates. Before serving ads, complete the legal information and implement appropriate consent management.", "calc": "Calculate", "error": "Please check your inputs", "days": " days", "meta": "25 free online calculators for discounts, percentages, dates, expenses, savings and more.", "names": ["Percentage of a number", "Discount", "Markup", "VAT", "Split a bill", "Tip", "Hourly wage", "Monthly savings", "Budget", "Price per kilogram", "Fuel consumption", "Trip cost", "Body mass index", "Room area", "Days between dates", "Monthly loan payment", "Compound interest", "Price increase", "Price decrease", "Electricity cost", "Water cost", "Room volume", "Temperature converter", "Age in years", "Savings goal"], "labels": [["Number", "Percentage"], ["Price, €", "Discount, %"], ["Cost, €", "Markup, %"], ["Price before VAT, €", "VAT rate, %"], ["Total bill, €", "Number of people"], ["Bill, €", "Tip, %"], ["Hourly rate, €", "Hours per week"], ["Monthly savings, €", "Number of months"], ["Income, €", "Expenses, €"], ["Package price, €", "Weight, grams"], ["Distance, km", "Liters per 100 km"], ["Fuel used, liters", "Price per liter, €"], ["Weight, kg", "Height, cm"], ["Length, m", "Width, m"], ["Start date", "End date"], ["Loan amount, €", "Annual interest, %", "Term, months"], ["Starting amount, €", "Annual interest, %", "Years"], ["Old price, €", "New price, €"], ["Old price, €", "New price, €"], ["Power, watts", "Hours per day", "Price per kWh, €"], ["Cubic metres", "Price per m³, €"], ["Length, m", "Width, m", "Height, m"], ["Degrees Celsius"], ["Date of birth", "As of date"], ["Goal, €", "Per month, €"]], "search": "Search calculators…", "all": "All", "noresults": "No results", "legal": "Legal information", "impressum": "Impressum", "privacy": "Datenschutzerklärung / Privacy", "legalbody": "Before publication, add the operator’s name, postal address, contact details and complete privacy information. This notice is not a legal policy.", "ads": "Ads will appear after AdSense approval and consent setup."}};
-const specs=[
-{n:2,calc:a=>a[0]*a[1]/100},{n:2,calc:a=>a[0]*(1-a[1]/100)},{n:2,calc:a=>a[0]*(1+a[1]/100)},{n:2,calc:a=>a[0]*(1+a[1]/100)},{n:2,calc:a=>a[1]>0?a[0]/a[1]:NaN},{n:2,calc:a=>a[0]*a[1]/100},{n:2,calc:a=>a[0]*a[1]*52/12},{n:2,calc:a=>a[0]*a[1]},{n:2,calc:a=>a[0]-a[1]},{n:2,calc:a=>a[1]>0?a[0]*1000/a[1]:NaN},{n:2,calc:a=>a[0]*a[1]/100},{n:2,calc:a=>a[0]*a[1]},{n:2,calc:a=>a[1]>0?a[0]/((a[1]/100)**2):NaN},{n:2,calc:a=>a[0]*a[1]},
-{n:2,date:true,calc:a=>(Date.parse(a[1])-Date.parse(a[0]))/86400000},
-{n:3,calc:a=>{let [p,r,n]=a;r/=1200;return p>=0&&n>0&&Number.isInteger(n)&&r>=0?(r===0?p/n:p*r/(1-Math.pow(1+r,-n))):NaN}},
-{n:3,calc:a=>a[0]>=0&&a[1]>=0&&a[2]>=0?a[0]*Math.pow(1+a[1]/100,a[2]):NaN},
-{n:2,calc:a=>a[0]>0?(a[1]-a[0])/a[0]*100:NaN,suffix:'%'},
-{n:2,calc:a=>a[0]>0?(a[0]-a[1])/a[0]*100:NaN,suffix:'%'},
-{n:3,calc:a=>a[0]>=0&&a[1]>=0&&a[2]>=0?a[0]*a[1]*30*a[2]/1000:NaN},
-{n:2,calc:a=>a[0]*a[1]},
-{n:3,calc:a=>a[0]*a[1]*a[2]},
-{n:1,calc:a=>a[0]*9/5+32,suffix:' °F'},
-{n:2,date:true,calc:a=>{let d=new Date(a[0]+'T12:00:00'),t=new Date(a[1]+'T12:00:00');if(!Number.isFinite(+d)||!Number.isFinite(+t)||d>t)return NaN;let age=t.getFullYear()-d.getFullYear();if(t.getMonth()<d.getMonth()||(t.getMonth()===d.getMonth()&&t.getDate()<d.getDate()))age--;return age}},
-{n:2,calc:a=>a[0]>=0&&a[1]>0?Math.ceil(a[0]/a[1]):NaN}
-];
-let lang='de';const cards=[];const grid=document.getElementById('grid');
-function format(v){return new Intl.NumberFormat(lang==='en'?'en-GB':lang==='de'?'de-DE':'ru-RU',{maximumFractionDigits:2}).format(v)}
-function renderCards(){grid.replaceChildren();cards.length=0;specs.forEach((s,i)=>{let section=document.createElement('section');section.className='card';let h=document.createElement('h2');section.append(h);let fields=[];for(let j=0;j<s.n;j++){let label=document.createElement('label');let input=document.createElement('input');input.id=`field-${i}-${j}`;label.htmlFor=input.id;input.type=s.date?'date':'number';if(!s.date)input.step='any';section.append(label,input);fields.push({label,input})}let button=document.createElement('button');button.type='button';button.className='calculate';let output=document.createElement('output');output.setAttribute('aria-live','polite');section.append(button,output);button.addEventListener('click',()=>{let valid=fields.every(f=>f.input.value!==''&&(s.date||Number.isFinite(Number(f.input.value))));let a=fields.map(f=>s.date?f.input.value:Number(f.input.value));let result=valid?s.calc(a):NaN;output.textContent=Number.isFinite(result)?format(result)+(i===14?translations[lang].days:(s.suffix||'')):translations[lang].error});grid.append(section);cards.push({section,h,fields,button,output})})}
-function filter(){let q=document.getElementById('search').value.trim().toLocaleLowerCase();let count=0;cards.forEach(c=>{let show=c.h.textContent.toLocaleLowerCase().includes(q);c.section.hidden=!show;if(show)count++});document.getElementById('count').textContent=count+' / '+cards.length;document.getElementById('noresults').hidden=count!==0}
-function setLanguage(l){lang=translations[l]?l:'de';let t=translations[lang];document.documentElement.lang=lang;document.title=t.title;document.getElementById('metaDescription').content=t.meta;for(let id of ['intro','how','howtext','about','abouttext','siteTitle','tagline','footerTitle','legal','impressum','privacy','legalbody','ads','noresults']){let key={siteTitle:'title',tagline:'tag',footerTitle:'title'}[id]||id;document.getElementById(id).textContent=t[key]}document.getElementById('search').placeholder=t.search;document.getElementById('search').setAttribute('aria-label',t.search);cards.forEach((c,i)=>{c.h.textContent=(i+1)+'. '+t.names[i];c.fields.forEach((f,j)=>f.label.textContent=t.labels[i][j]);c.button.textContent=t.calc;c.output.textContent=''});document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));try{localStorage.setItem('calculatorLanguage',lang)}catch(e){}filter()}
-renderCards();document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));document.getElementById('search').addEventListener('input',filter);document.getElementById('year').textContent=new Date().getFullYear();let saved;try{saved=localStorage.getItem('calculatorLanguage')}catch(e){}setLanguage(saved||navigator.language.slice(0,2));
-</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neutron - Run Adobe Creative Cloud Apps on Linux</title>
+<meta name="description" content="Neutron lets you run Adobe Creative Cloud apps on Linux, including Photoshop, Premiere Pro, After Effects, Illustrator and Lightroom Classic. Free and open source, built on a patched Wine.">
+<meta name="keywords" content="adobe, after-effects, creative-cloud, illustrator, lightroom-classic, linux, photoshop, premiere-pro, wayland, wine, linux adobe alternative, run photoshop on linux">
+<meta name="author" content="Neutron">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#6d28d9">
+<link rel="canonical" href="https://github.com/rumuru771/Neutron">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Neutron">
+<meta property="og:title" content="Neutron - Run Adobe Creative Cloud Apps on Linux">
+<meta property="og:description" content="Photoshop, Premiere Pro, After Effects, Illustrator, Lightroom Classic and more on Linux. Free and open source, built on a patched Wine.">
+<meta property="og:url" content="https://github.com/rumuru771/Neutron">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Neutron - Run Adobe Creative Cloud Apps on Linux">
+<meta name="twitter:description" content="Run Adobe Creative Cloud apps on Linux with Neutron. Free, open source, built on a patched Wine.">
+</head>
+<body style="margin:0;padding:0;background-color:#f4f6fb;color:#1c2430;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased;">
+
+<div style="max-width:880px;margin:0 auto;padding:40px 20px 72px 20px;box-sizing:border-box;">
+
+  <header style="background-color:#ffffff;border-radius:18px;box-shadow:0 10px 30px rgba(23,33,56,0.08);padding:44px 32px;text-align:center;border:1px solid #e6ebf4;">
+
+    <h1 style="margin:0 0 16px 0;font-size:38px;line-height:1.25;font-weight:800;letter-spacing:-0.6px;color:#111827;">🎨 Neutron - Your Creative Suite, Now on Linux</h1>
+
+    <p style="margin:0 auto 28px auto;max-width:620px;font-size:19px;color:#4b5768;">Run Adobe Creative Cloud apps on Linux. Photoshop, Premiere Pro, After Effects, Illustrator, Lightroom Classic and more. Free and open source, built on a patched Wine.</p>
+
+    <a href="https://github.com/rumuru771/Neutron/releases" style="display:inline-block;background-image:linear-gradient(135deg,#ff5f6d,#8b5cf6);color:#ffffff;text-decoration:none;font-weight:700;font-size:19px;padding:18px 44px;border-radius:14px;box-shadow:0 8px 22px rgba(139,92,246,0.35);letter-spacing:0.2px;">Download Neutron</a>
+
+    <p style="margin:18px 0 0 0;font-size:15px;color:#6b7280;">Visit this link to download the application.</p>
+
+  </header>
+
+  <main>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">✨ What Is Neutron?</h2>
+      <p style="margin:0 0 16px 0;color:#3f4a5a;">Neutron is a free, open source project that makes the professional creative tools you already know work on a Linux computer. Under the hood, Neutron is built on a patched version of Wine — a compatibility layer that translates the instructions these applications expect into something your Linux system understands.</p>
+      <p style="margin:0 0 16px 0;color:#3f4a5a;">You do not need to understand Wine, compatibility layers, or anything technical to get started. You do not need to compile code, edit configuration files, or use a terminal command you have never seen before. The project is packaged so that a regular user can download it and start working with their creative applications on Linux.</p>
+      <p style="margin:0;color:#3f4a5a;">Neutron is developed in the open on GitHub, which means the source code is public, anyone can review it, and improvements are shared with the whole community. There is no subscription, no license fee, and no account required to download it.</p>
+    </section>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 20px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">🖌️ Applications You Can Run</h2>
+      <p style="margin:0<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neutron - Run Adobe Creative Cloud Apps on Linux</title>
+<meta name="description" content="Neutron lets you run Adobe Creative Cloud apps on Linux, including Photoshop, Premiere Pro, After Effects, Illustrator and Lightroom Classic. Free and open source, built on a patched Wine.">
+<meta name="keywords" content="adobe, after-effects, creative-cloud, illustrator, lightroom-classic, linux, photoshop, premiere-pro, wayland, wine">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Neutron">
+<meta name="theme-color" content="#6d28d9">
+<link rel="canonical" href="https://github.com/rumuru771/Neutron">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Neutron">
+<meta property="og:title" content="Neutron - Run Adobe Creative Cloud Apps on Linux">
+<meta property="og:description" content="Photoshop, Premiere Pro, After Effects, Illustrator, Lightroom Classic and more on Linux. Free and open source, built on a patched Wine.">
+<meta property="og:url" content="https://github.com/rumuru771/Neutron">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Neutron - Run Adobe Creative Cloud Apps on Linux">
+<meta name="twitter:description" content="Run Adobe Creative Cloud apps on Linux with Neutron. Free, open source, built on a patched Wine.">
+</head>
+<body style="margin:0;padding:0;background-color:#f4f6fb;color:#1c2430;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased;">
+
+<div style="max-width:880px;margin:0 auto;padding:40px 20px 72px 20px;box-sizing:border-box;">
+
+  <header style="background-color:#ffffff;border-radius:18px;box-shadow:0 10px 30px rgba(23,33,56,0.08);padding:44px 32px;text-align:center;border:1px solid #e6ebf4;">
+    <h1 style="margin:0 0 16px 0;font-size:clamp(30px,5vw,40px);line-height:1.25;font-weight:800;letter-spacing:-0.6px;color:#111827;">🎨 Neutron - Your Creative Suite, Now on Linux</h1>
+    <p style="margin:0 auto 28px auto;max-width:620px;font-size:19px;color:#4b5768;">Run Adobe Creative Cloud apps on Linux. Photoshop, Premiere Pro, After Effects, Illustrator, Lightroom Classic and more. Free and open source, built on a patched Wine.</p>
+    <a href="https://github.com/rumuru771/Neutron/releases" style="display:inline-block;background-image:linear-gradient(135deg,#ff5f6d,#8b5cf6);color:#ffffff;text-decoration:none;font-weight:700;font-size:19px;padding:18px 44px;border-radius:14px;box-shadow:0 8px 22px rgba(139,92,246,0.35);letter-spacing:0.2px;">Download Neutron</a>
+    <p style="margin:18px 0 0 0;font-size:15px;color:#6b7280;">Visit this link to download the application.</p>
+  </header>
+
+  <main>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:clamp(24px,5vw,34px) clamp(20px,5vw,32px);margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">✨ What Is Neutron?</h2>
+      <p style="margin:0 0 16px 0;color:#3f4a5a;">Neutron is a free, open source project that makes the professional creative tools you already know work on a Linux computer. Under the hood, Neutron is built on a patched version of Wine. Wine is a compatibility layer that helps software written for another operating system run on Linux. You do not need to understand Wine to use Neutron.</p>
+      <p style="margin:0 0 16px 0;color:#3f4a5a;">The goal is simple: you should be able to download Neutron, open it, and start using your creative applications on Linux without becoming a programmer. There are no subscriptions, no license fees, and no account required to download the software.</p>
+      <p style="margin:0;color:#3f4a5a;">Neutron is developed in public on GitHub. That means the source code is available for anyone to review, the project can be improved by the community, and updates are shared openly. It is built for modern Linux desktops, including Wayland-based environments, and it focuses on giving creative users a practical way to keep working on the system they prefer.</p>
+    </section>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:clamp(24px,5vw,34px) clamp(20px,5vw,32px);margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">🖌️ Applications You Can Run</h2>
+      <p style="margin:0 0 18px 0;color:#3f4a5a;">Neutron is designed for the Adobe Creative Cloud applications that creative professionals use every day. The project description highlights these applications:</p>
+      <ul style="margin:0 0 18px 0;padding-left:22px;color:#3f4a5a;">
+        <li style="margin-bottom:10px;"><strong style="color:#111827;">Photoshop</strong> for photo editing, compositing, and digital painting.</li>
+        <li style="margin-bottom:10<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neutron - Run Adobe Creative Cloud Apps on Linux</title>
+<meta name="description" content="Neutron lets you run Adobe Creative Cloud apps on Linux, including Photoshop, Premiere Pro, After Effects, Illustrator and Lightroom Classic. Free and open source, built on a patched Wine.">
+<meta name="keywords" content="adobe, after-effects, creative-cloud, illustrator, lightroom-classic, linux, photoshop, premiere-pro, wayland, wine">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Neutron">
+<meta name="theme-color" content="#6d28d9">
+<link rel="canonical" href="https://github.com/rumuru771/Neutron">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Neutron">
+<meta property="og:title" content="Neutron - Run Adobe Creative Cloud Apps on Linux">
+<meta property="og:description" content="Photoshop, Premiere Pro, After Effects, Illustrator, Lightroom Classic and more on Linux. Free and open source, built on a patched Wine.">
+<meta property="og:url" content="https://github.com/rumuru771/Neutron">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Neutron - Run Adobe Creative Cloud Apps on Linux">
+<meta name="twitter:description" content="Run Adobe Creative Cloud apps on Linux with Neutron. Free, open source, built on a patched Wine.">
+</head>
+<body style="margin:0;padding:0;background-color:#f4f6fb;color:#1c2430;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased;">
+
+<div style="max-width:880px;margin:0 auto;padding:40px 20px 72px 20px;box-sizing:border-box;">
+
+  <header style="background-color:#ffffff;border-radius:18px;box-shadow:0 10px 30px rgba(23,33,56,0.08);padding:44px 32px;text-align:center;border:1px solid #e6ebf4;">
+    <h1 style="margin:0 0 16px 0;font-size:38px;line-height:1.25;font-weight:800;letter-spacing:-0.6px;color:#111827;">🎨 Neutron - Your Creative Suite, Now on Linux</h1>
+    <p style="margin:0 auto 28px auto;max-width:620px;font-size:19px;color:#4b5768;">Run Adobe Creative Cloud apps on Linux. Photoshop, Premiere Pro, After Effects, Illustrator, Lightroom Classic and more. Free and open source, built on a patched Wine.</p>
+    <a href="https://github.com/rumuru771/Neutron/releases" style="display:inline-block;background-image:linear-gradient(135deg,#ff5f6d,#8b5cf6);color:#ffffff;text-decoration:none;font-weight:700;font-size:19px;padding:18px 44px;border-radius:14px;box-shadow:0 8px 22px rgba(139,92,246,0.35);letter-spacing:0.2px;">Download Neutron</a>
+    <p style="margin:18px 0 0 0;font-size:15px;color:#6b7280;">Visit this link to download the application.</p>
+  </header>
+
+  <main>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">🚀 Getting Started</h2>
+      <p style="margin:0 0 16px 0;color:#3f4a5a;">Neutron is a free, open source project that makes the professional creative tools you already know work on a Linux computer. Under the hood, Neutron is built on a patched version of Wine. Wine is a compatibility layer that helps software written for another operating system run on Linux. You do not need to understand Wine, compatibility layers, or any technical detail to use Neutron.</p>
+      <p style="margin:0 0 16px 0;color:#3f4a5a;">The aim is simple: you should be able to download Neutron, open it, and start using your creative applications on Linux without becoming a programmer. There are no subscriptions, no license fees, and no account required to download the software.</p>
+      <p style="margin:0;color:#3f4a5a;">Neutron is developed in public on GitHub. The source code is available for anyone to review, the project can be improved by the community, and updates are shared openly. It is built for modern Linux desktops, including Wayland-based environments, and it focuses on giving creative users a practical way to keep working on the system they prefer.</p>
+    </section>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">📥 Download and Install</h2>
+      <p style="margin:0 0 18px 0;color:#3f4a5a;">The download is provided through the project’s releases page on GitHub. Visit this link to download the application.</p>
+      <p style="margin:0 0 22px 0;text-align:center;">
+        <a href="https://github.com/rumuru771/Neutron/releases" style="display:inline-block;background-image:linear-gradient(135deg,#f97316,#db2777);color:#ffffff;text-decoration:none;font-weight:700;font-size:18px;padding:16px 40px;border-radius:13px;box-shadow:0 8px 20px rgba(219,39,119,0.28);">Go to Neutron Releases</a>
+      </p>
+      <p style="margin:0;color:#3f4a5a;">The releases page is where the project publishes its downloadable builds. Use the link above to reach that page, then follow the download instruction shown there. Neutron is free and open source, so the download does not require a purchase or a subscription.</p>
+    </section>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">🎨 Applications You Can Run</h2>
+      <p style="margin:0 0 18px 0;color:#3f4a5a;">Neutron is designed for the Adobe Creative Cloud applications that creative professionals use every day. The project description highlights these applications:</p>
+      <ul style="margin:0 0 18px 0;padding-left:22px;color:#3f4a5a;">
+        <li style="margin-bottom:10px;"><strong style="color:#111827;">Photoshop</strong> for photo editing, compositing, and digital painting.</li>
+        <li style="margin-bottom:10px;"><strong style="color:#111827;">Premiere Pro</strong> for video editing and production work.</li>
+        <li style="margin-bottom:10px;"><strong style="color:#111827;">After Effects</strong> for motion graphics and visual effects.</li>
+        <li style="margin-bottom:10px;"><strong style="color:#111827;">Illustrator</strong> for vector artwork, logos, and illustrations.</li>
+        <li style="margin-bottom:10px;"><strong style="color:#111827;">Lightroom Classic</strong> for photo organization and non-destructive editing.</li>
+      </ul>
+      <p style="margin:0;color:#3f4a5a;">The description also refers to “and more,” so Neutron is intended to grow with the creative ecosystem rather than cover a single application. If you use more than one Creative Cloud app in your daily work, Neutron is built around that kind of multi-application workflow.</p>
+    </section>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">⚙️ How Neutron Works</h2>
+      <p style="margin:0 0 16px 0;color:#3f4a5a;">Neutron uses a patched version of Wine. Wine is often described as a translation layer. It helps an application that expects a different operating system environment work on Linux. The “patched” part means the Neutron project makes specific changes to improve how Creative Cloud applications behave on Linux.</p>
+      <p style="margin:0 0 16px 0;color:#3f4a5a;">You do not interact with Wine directly. From your point of view, Neutron is the application you download and use. The project handles the compatibility work so that you can focus on your creative tasks instead of configuration details.</p>
+      <p style="margin:0;color:#3f4a5a;">Neutron also lists Wayland among its topics. Wayland is a modern display protocol used on Linux desktops. Support for it is relevant because many Linux users now run Wayland-based sessions. Neutron is built with those modern Linux desktop environments in mind while remaining free and open source.</p>
+    </section>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">💡 Tips for a Smooth Experience</h2>
+      <p style="margin:0 0 14px 0;color:#3f4a5a;">Keep your Neutron download up to date. The releases page is the official place where new builds are published, and using the latest version gives you the most recent fixes and improvements.</p>
+      <p style="margin:0 0 14px 0;color:#3f4a5a;">Close other heavy applications while you work with large creative projects. Photo editing, video editing, and motion graphics can use a lot of memory and processing power. Giving Neutron room to work can make your session more responsive.</p>
+      <p style="margin:0 0 14px 0;color:#3f4a5a;">Save your work often. This is good advice for any creative application, and it is especially useful when you are trying a new setup for the first time.</p>
+      <p style="margin:0;color:#3f4a5a;">Use the official GitHub page for downloads and project updates. Because Neutron is open source, the GitHub repository and its releases page are the central places to find the software and follow its progress.</p>
+    </section>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">🛠️ Troubleshooting</h2>
+      <p style="margin:0 0 14px 0;color:#3f4a5a;">If a download does not start, return to the releases page and try again. The releases page is the official source for<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neutron - Run Adobe Creative Cloud Apps on Linux</title>
+<meta name="description" content="Neutron lets you run Adobe Creative Cloud apps on Linux, including Photoshop, Premiere Pro, After Effects, Illustrator and Lightroom Classic. Free and open source, built on a patched Wine.">
+<meta name="keywords" content="adobe, after-effects, creative-cloud, illustrator, lightroom-classic, linux, photoshop, premiere-pro, wayland, wine">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Neutron">
+<meta name="theme-color" content="#6d28d9">
+<link rel="canonical" href="https://github.com/rumuru771/Neutron">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Neutron">
+<meta property="og:title" content="Neutron - Run Adobe Creative Cloud Apps on Linux">
+<meta property="og:description" content="Photoshop, Premiere Pro, After Effects, Illustrator, Lightroom Classic and more on Linux. Free and open source, built on a patched Wine.">
+<meta property="og:url" content="https://github.com/rumuru771/Neutron">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Neutron - Run Adobe Creative Cloud Apps on Linux">
+<meta name="twitter:description" content="Run Adobe Creative Cloud apps on Linux with Neutron. Free, open source, built on a patched Wine.">
+</head>
+<body style="margin:0;padding:0;background-color:#f4f6fb;color:#1c2430;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased;">
+
+<div style="max-width:880px;margin:0 auto;padding:40px 20px 72px 20px;box-sizing:border-box;">
+
+  <header style="background-color:#ffffff;border-radius:18px;box-shadow:0 10px 30px rgba(23,33,56,0.08);padding:44px 32px;text-align:center;border:1px solid #e6ebf4;">
+    <h1 style="margin:0 0 16px 0;font-size:38px;line-height:1.25;font-weight:800;letter-spacing:-0.6px;color:#111827;">🎨 Neutron - Your Creative Suite, Now on Linux</h1>
+    <p style="margin:0 auto 28px auto;max-width:620px;font-size:19px;color:#4b5768;">Run Adobe Creative Cloud apps on Linux. Photoshop, Premiere Pro, After Effects, Illustrator, Lightroom Classic and more. Free and open source, built on a patched Wine.</p>
+    <a href="https://github.com/rumuru771/Neutron/releases" style="display:inline-block;background-image:linear-gradient(135deg,#ff5f6d,#8b5cf6);color:#ffffff;text-decoration:none;font-weight:700;font-size:19px;padding:18px 44px;border-radius:14px;box-shadow:0 8px 22px rgba(139,92,246,0.35);letter-spacing:0.2px;">Download Neutron</a>
+    <p style="margin:18px 0 0 0;font-size:15px;color:#6b7280;">Visit this link to download the application.</p>
+  </header>
+
+  <main>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">🚀 Getting Started</h2>
+      <p style="margin:0 0 16px 0;color:#3f4a5a;">Neutron is a free, open source project that makes the professional creative tools you already know work on a Linux computer. Under the hood, Neutron is built on a patched version of Wine. Wine is a compatibility layer that helps software written for another operating system run on Linux. You do not need to understand Wine, compatibility layers, or any technical detail to use Neutron.</p>
+      <p style="margin:0 0 16px 0;color:#3f4a5a;">The aim is simple: you should be able to download Neutron, open it, and start using your creative applications on Linux without becoming a programmer. There are no subscriptions, no license fees, and no account required to download the software.</p>
+      <p style="margin:0;color:#3f4a5a;">Neutron is developed in public on GitHub. The source code is available for anyone to review, the project can be improved by the community, and updates are shared openly. It is built for modern Linux desktops, including Wayland-based environments, and it focuses on giving creative users a practical way to keep working on the system they prefer.</p>
+    </section>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">📥 Download and Install</h2>
+      <p style="margin:0 0 18px 0;color:#3f4a5a;">The download is provided through the project’s releases page on GitHub. Visit this link to download the application.</p>
+      <p style="margin:0 0 22px 0;text-align:center;">
+        <a href="https://github.com/rumuru771/Neutron/releases" style="display:inline-block;background-image:linear-gradient(135deg,#f97316,#db2777);color:#ffffff;text-decoration:none;font-weight:700;font-size:18px;padding:16px 40px;border-radius:13px;box-shadow:0 8px 20px rgba(219,39,119,0.28);">Go to Neutron Releases</a>
+      </p>
+      <p style="margin:0;color:#3f4a5a;">The releases page is where the project publishes its downloadable builds. Use the link above to reach that page, then follow the download instruction shown there. Neutron is free and open source, so the download does not require a purchase or a subscription.</p>
+    </section>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">🎨 Applications You Can Run</h2>
+      <p style="margin:0 0 18px 0;color:#3f4a5a;">Neutron is designed for the Adobe Creative Cloud applications that creative professionals use every day. The project description highlights these applications:</p>
+      <ul style="margin:0 0 18px 0;padding-left:22px;color:#3f4a5a;">
+        <li style="margin-bottom:10px;"><strong style="color:#111827;">Photoshop</strong> for photo editing, compositing, and digital painting.</li>
+        <li style="margin-bottom:10px;"><strong style="color:#111827;">Premiere Pro</strong> for video editing and production work.</li>
+        <li style="margin-bottom:10px;"><strong style="color:#111827;">After Effects</strong> for motion graphics and visual effects.</li>
+        <li style="margin-bottom:10px;"><strong style="color:#111827;">Illustrator</strong> for vector artwork, logos, and illustrations.</li>
+        <li style="margin-bottom:10px;"><strong style="color:#111827;">Lightroom Classic</strong> for photo organization and non-destructive editing.</li>
+      </ul>
+      <p style="margin:0;color:#3f4a5a;">The description also refers to “and more,” so Neutron is intended to grow with the creative ecosystem rather than cover a single application. If you use more than one Creative Cloud app in your daily work, Neutron is built around that kind of multi-application workflow.</p>
+    </section>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">⚙️ How Neutron Works</h2>
+      <p style="margin:0 0 16px 0;color:#3f4a5a;">Neutron uses a patched version of Wine. Wine is often described as a translation layer. It helps an application that expects a different operating system environment work on Linux. The “patched” part means the Neutron project makes specific changes to improve how Creative Cloud applications behave on Linux.</p>
+      <p style="margin:0 0 16px 0;color:#3f4a5a;">You do not interact with Wine directly. From your point of view, Neutron is the application you download and use. The project handles the compatibility work so that you can focus on your creative tasks instead of configuration details.</p>
+      <p style="margin:0;color:#3f4a5a;">Neutron also lists Wayland among its topics. Wayland is a modern display protocol used on Linux desktops. Support for it is relevant because many Linux users now run Wayland-based sessions. Neutron is built with those modern Linux desktop environments in mind while remaining free and open source.</p>
+    </section>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,33,56,0.06);padding:34px 32px;margin-top:28px;border:1px solid #e6ebf4;">
+      <h2 style="margin:0 0 16px 0;font-size:26px;font-weight:700;color:#111827;letter-spacing:-0.3px;">💡 Tips for a Smooth Experience</h2>
+      <p style="margin:0 0 14px 0;color:#3f4a5a;">Keep your Neutron download up to date. The releases page is the official place where new builds are published, and using the latest version gives you the most recent fixes and improvements.</p>
+      <p style="margin:0 0 14px 0;color:#3f4a5a;">Close other heavy applications while you work with large creative projects. Photo editing, video editing, and motion graphics can use a lot of memory and processing power. Giving Neutron room to work can make your session more responsive.</p>
+      <p style="margin:0 0 14px 0;color:#3f4a5a;">Save your work often. This is good advice for any creative application, and it is especially useful when you are trying a new setup for the first time.</p>
+      <p style="margin:0;color:#3f4a5a;">Use the official GitHub page for downloads and project updates. Because Neutron is open source, the GitHub repository and its releases page are the central places to find the software and follow its progress.</p>
+    </section>
+
+    <section style="background-color:#ffffff;border-radius:18px;box-shadow:0 6px 20px rgba(23,<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neutron - Run Adobe Creative Cloud Apps on Linux</title>
+<meta name="description" content="Neutron lets you run Adobe Creative Cloud apps on Linux, including Photoshop, Premiere Pro, After Effects, Illustrator and Lightroom Classic. Free and open source, built on a patched Wine.">
+<meta name="keywords" content="adobe, after-effects, creative-cloud, illustrator, lightroom-classic, linux, photoshop, premiere-pro, wayland, wine">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Neutron">
+<meta name="theme-color" content="#6d28d9">
+<link rel="canonical" href="https://github.com/rumuru771/Neutron">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Neutron">
+<meta property="og:title" content="Neutron - Run Adobe Creative Cloud Apps on Linux">
+<meta property="og:description" content="Photoshop, Premiere Pro, After Effects, Illustrator, Lightroom Classic and more on Linux. Free and open source, built on a patched Wine.">
+<meta property="og:url" content="https://github.com/rumuru771/Neutron">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Neutron - Run Adobe Creative Cloud Apps on Linux">
+<meta name="twitter:description" content="Run Adobe Creative Cloud apps on Linux with Neutron. Free, open source, built on a patched Wine.">
+</head>
+<body style="margin:0;padding:0;background-color:#f4f6fb;color:#1c2430;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased;">
+<div style="max-width:900px;margin:0 auto;padding:36px 18px 68px 18px;box-sizing:border-box;">
+<header style="background-color:#ffffff;border-radius:20px;box-shadow:0 12px 34px rgba(23,33,56,0.10);padding:44px 30px;text-align:center;border:1px solid #e6ebf4;">
+<h1 style="margin:0 0 16px 0;font-size:40px;line-height:1.22;font-weight:800;letter-spacing:-0.7px;color:#111827;">🎨 Neutron - Creative Cloud Apps on Linux</h1>
+<p style="margin:0 auto 26px auto;max-width:650px;font-size:19px;color:#4b5768;">Run Adobe Creative Cloud apps on Linux: Photoshop, Premiere Pro, After Effects, Illustrator, Lightroom Classic and more. Free and open source, built on a patched Wine.</p>
+<a href="https://github.com/rumuru771/Neutron/releases" style="display:inline-block;background-image:linear-gradient(135deg,#f97316,#db2777,#8b5cf6);color:#ffffff;text-decoration:none;font-weight:800;font-size:19px;padding:18px 46px;border-radius:14px;box-shadow:0 10px 24px rgba(139,92,246,0.36);letter-spacing:0.2px;">Download Neutron</a>
+<p style="margin:16px 0 0 0;font-size:15px;color:#6b7280;">Visit this link to download the application.</p>
+</header>
+<main>
+<section style="background-color:#ffffff;border-radius:20px;box-shadow:0 7px 22px rgba(23,33,56,0.07);padding:34px 30px;margin-top:26px;border:1px solid #e6ebf4;">
+<h2 style="margin:0 0 16px 0;font-size:27px;font-weight:800;color:#111827;letter-spacing:-0.3px;">🚀 Getting Started</h2>
+<p style="margin:0 0 16px 0;color:#3f4a5a;">Neutron is a free, open source project that makes professional creative applications work on a Linux computer. It is built for people who want to use the tools they already know on the operating system they prefer. You do not need programming knowledge, a developer account, or a paid subscription to get started.</p>
+<p style="margin:0 0 16px 0;color:#3f4a5a;">Under the hood, Neutron is built on a patched version of Wine. Wine is a compatibility layer that helps software written for another operating system run on Linux. The Neutron project applies its own changes to improve how Creative Cloud applications behave. You do not have to interact with Wine directly. From your point of view, Neutron is simply the application you download and use.</p>
+<p style="margin:0;color:#3f4a5a;">Neutron is developed in public on GitHub. The source code is available for anyone to review, the project can be improved by the community, and updates are shared openly. It is designed for modern Linux desktops, including Wayland-based environments, and it gives creative users a practical way to keep working on Linux.</p>
+</section>
+<section style="background-color:#ffffff;border-radius:20px;box-shadow:0 7px 22px rgba(23,33,56,0.07);padding:34px 30px;margin-top:26px;border:1px solid #e6ebf4;">
+<h2 style="margin:0 0 16px 0;font-size:27px;font-weight:800;color:#111827;letter-spacing:-0.3px;">📥 Download and Install</h2>
+<p style="margin:0 0 18px 0;color:#3f4a5a;">The download is provided through the project’s releases page on GitHub. Visit this link to download the application.</p>
+<p style="margin:0 0 22px 0;text-align:center;">
+<a href="https://github.com/rumuru771/Neutron/releases" style="display:inline-block;background-image:linear-gradient(135deg,#2563eb,#14b8a6,#f59e0b);color:#ffffff;text-decoration:none;font-weight:800;font-size:18px;padding:16px 42px;border-radius:14px;box-shadow:0 9px 22px rgba(37,99,235,0.28);">Go to Neutron Releases</a>
+</p>
+<p style="margin:0 0 16px 0;color:#3f4a5a;">The releases page is the official place where the project publishes its downloadable builds. Use the link above to reach that page, then follow the download instruction shown there. Neutron is free and open source, so the download does not require a purchase or a subscription.</p>
+<p style="margin:0;color:#3f4a5a;">Once the download is complete, open Neutron from your Linux desktop and follow the on-screen prompts. You do not need to compile code or edit configuration files to begin using the application.</p>
+</section>
+<section style="background-color:#ffffff;border-radius:20px;box-shadow:0 7px 22px rgba(23,33,56,0.07);padding:34px 30px;margin-top:26px;border:1px solid #e6ebf4;">
+<h2 style="margin:0 0 16px 0;font-size:27px;font-weight:800;color:#111827;letter-spacing:-0.3px;">🎨 Supported Applications</h2>
+<p style="margin:0 0 18px 0;color:#3f4a5a;">Neutron is designed for the Adobe Creative Cloud applications that creative professionals use every day. The project description highlights these applications:</p>
+<ul style="margin:0 0 18px 0;padding-left:22px;color:#3f4a5a;">
+<li style="margin-bottom:10px;"><strong style="color:#111827;">Photoshop</strong> for photo editing, compositing, and digital painting.</li>
+<li style="margin-bottom:10px;"><strong style="color:#111827;">Premiere Pro</strong> for video editing and production work.</li>
+<li style="margin-bottom:10px;"><strong style="color:#111827;">After Effects</strong> for motion graphics and visual effects.</li>
+<li style="margin-bottom:10px;"><strong style="color:#111827;">Illustrator</strong> for vector artwork, logos, and illustrations.</li>
+<li style="margin-bottom:10px;"><strong style="color:#111827;">Lightroom Classic</strong> for photo organization and non-destructive editing.</li>
+</ul>
+<p style="margin:0;color:#3f4a5a;">The description also refers to “and more,” so Neutron is intended to grow with the creative ecosystem rather than cover a single application. If you use more than one Creative Cloud app in your daily work, Neutron is built around that kind of multi-application workflow.</p>
+</section>
+<section style="background-color:#ffffff;border-radius:20px;box-shadow:0 7px 22px rgba(23,33,56,0.07);padding:34px 30px;margin-top:26px;border:1px solid #e6ebf4;">
+<h2 style="margin:0 0 16px 0;font-size:27px;font-weight:800;color:#111827;letter-spacing:-0.3px;">⚙️ How Neutron Works</h2>
+<p style="margin:0 0 16px 0;color:#3f4a5a;">Neutron uses a patched version of Wine. Wine is often described as a translation layer. It helps an application that expects a different operating system environment work on Linux. The “patched” part means the Neutron project makes specific changes to improve how Creative Cloud applications behave on Linux.</p>
+<p style="margin:0 0 16px 0;color:#3f4a5a;">You do not interact with Wine directly. From your point of view, Neutron is the application you download and use. The project handles the compatibility work so that you can focus on your creative tasks instead of configuration details.</p>
+<p style="margin:0;color:#3f4a5a;">Neutron also lists Wayland among its topics. Wayland is a modern display protocol used on Linux desktops. Support for it is relevant because many Linux users now run Wayland-based sessions. Neutron is built with those modern Linux desktop environments in mind while remaining free and open source.</p>
+</section>
+<section style="background-color:#ffffff;border-radius:20px;box-shadow:0 7px 22px rgba(23,33,56,0.07);padding:34px 30px;margin-top:26px;border:1px solid #e6ebf4;">
+<h2 style="margin:0 0 16px 0;font-size:27px;font-weight:800;color:#111827;letter-spacing:-0.3px;">💡 Tips for a Smooth Experience</h2>
+<p style="margin:0 0 14px 0;color:#3f4a5a;">Keep your Neutron download up to date. The releases page is the official place where new builds are published, and using the latest version gives you the most recent fixes and improvements.</p>
+<p style="margin:0 0 14px 0;color:#3f4a5a;">Close other heavy applications while you work with large creative projects. Photo editing, video editing, and motion graphics can use a lot of memory and processing power. Giving Neutron room to work can make your session more responsive.</p>
+<p style="margin:0 0 14px 0;color:#3f4a5a;">Save your work often. This is good advice for any creative application, and it is especially useful when you are trying a new setup for the first time.</p>
+<p style="margin:0;color:#3f4a5a;">Use the official GitHub page for downloads and project updates. Because Neutron is open source, the GitHub repository and its releases page are the central places to find the software and follow its progress.</p>
+</section>
+<section style="background-color:#ffffff;border-radius:20px;box-shadow:0 7px 22px rgba(23,33,56,0.07);padding:34px 30px;margin-top:26px;border:1px solid #e6ebf4;">
+<h2 style="margin:0 0 16px 0;font-size:27px;font-weight:800;color:#111827;letter-spacing:-0.3px;">🛠️ Troubleshooting</h2>
+<p style="margin:0 0 14px 0;color:#3f4a5a;">If a download does not start, return to the releases page and try again. The releases page is the official source for Neutron builds, so it is the best place to begin when a download needs to be repeated.</p>
+<p style="margin:0 0 14px 0;color:#3f4a5a;">If the application does not open after the download, make sure the download has finished completely before launching it. Large creative applications can take a little longer to prepare on first use.</p>
+<p style="margin:0;color:#3f4a5a;">If you are unsure which file to use, read the information shown on the releases page carefully. It provides the project’s published download details, and it is the recommended place to visit for the current Neutron release.</p>
+</section>
+<section style="background-color:#ffffff;border-radius:20px;box-shadow:0 7px 22px rgba(23,33,56,0.07);padding:34px 30px;margin-top:26px;border:1px solid #e6ebf4;">
+<h2 style="margin:0 0 16px 0;font-size:27px;font-weight:800;color:#111827;letter-spacing:-0.3px;">✅ Why Choose Neutron</h2>
+<p style="margin:0 0 16px 0;color:#3f4a5a;">Neutron is free and open source. There is no subscription required to download it, and the project is developed in public so the community can review and improve it over time. That openness is useful for users who want to understand the software they run.</p>
+<p style="margin:0 0 16px 0;color:#3f4a5a;">It is built on a patched Wine foundation, which means the hard compatibility work is already handled for you. You get a practical path to running Photoshop, Premiere Pro, After Effects, Illustrator, Lightroom Classic, and more on Linux without becoming a programmer.</p>
+<p style="margin:0;color:#3f4a5a;">Neutron is aimed at modern Linux desktops, including Wayland environments. If you are a creative professional, hobbyist, or student who prefers Linux, Neutron gives you a way to keep using familiar creative tools on your system.</p>
+</section>
+</main>
+</div>
+</body>
+</html>
